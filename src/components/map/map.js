@@ -113,6 +113,9 @@ class Map extends Component {
         <GoogleMapReact
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
+          defaultOptions={{
+            styles: mapOptions.styles
+          }}
         >
           <AnyReactComponent lat={51.5118} lng={0.1232} />
         </GoogleMapReact>
